@@ -10,6 +10,8 @@ Instead of using ready-made commercial radiosondes from, e.g., Vaisala, this bal
 
 The payload uses an [Adafruit Feather](https://www.adafruit.com/product/3179) board which includes a [LoRa](https://en.wikipedia.org/wiki/LoRa) radio transceiver module. The ground station is simply another identical board with an antenna. We use a custom PCB for the payload to include additional LEDs, thermistors, sensors for pressure and humidity, orientation (IMU), and a GNSS-module for time and position.
 
+The flight software is written in C++ (Arduino), but the ground station code is written in CircuitPython.
+
 ### Telemetry range
 
 The transmit antenna is a simple "whip" or a piece of wire of correct length, which depends on the used frequency. For the receiver, one can use a similar whip for shorter distances. Our students have also built a simple quarter-wavelength ground-plane antennas for improved reception.
